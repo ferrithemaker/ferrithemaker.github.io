@@ -6,7 +6,7 @@ categories: people-counter
 ---
 Recent versions of mobile operatig systems like [Android 10](https://www.android.com/android-10/) uses a new privacy setting to avoid tracking, randomizing the last 3 bytes of the device MAC address.
 
-To overide this, I added the new `mac_randomizer_mode` to the MQTT people counter script. This mode marks as the same MAC address if the first 3 bytes of the MAC address appears in the last 15 minutes (you can change the threshold). It's not a perfect solution, but the chances to get the same first 3 bytes (often related to a brand specific model series) in a short time window within a few meters distance from the detector device are very few.
+To override this, a new `mac_randomizer_mode` option has been added to the MQTT script. This mode marks as the same MAC address if the first 3 bytes of the MAC address appears in the last 15 minutes (you can change the threshold). It's not a perfect solution, but the chances to get the same first 3 bytes (often related to a brand specific model series) in a short time window within a few meters distance from the detector device are very few indeed.
 
 
 {% highlight python %}

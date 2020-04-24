@@ -4,23 +4,61 @@ title:  "Lifebox live generative music"
 date:   2020-04-22 20:14:26 +0200
 categories: lifebox
 ---
-Lifebox project have a You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Lifebox project have a `new feature`: a generative MIDI music. Now, the Lifebox script generates a MIDI output based on real-time simulation data. Those `MIDI signals` can be played through a synth or other musical software, allowing to create an immersive soundscape.
 
-Jekyll requires blog post files to be named according to the following format:
-
-`YEAR-MONTH-DAY-title.MARKUP`
-
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
+This code is only a preview demo release and must be improved.
 
 {% highlight python %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+import rtmidi # midi library
+# midi thread functions
+
+# midi chords
+def majorChordGenerator():
+    startValue = random.randint(50,60)
+    return ([startValue,startValue+4,startValue+7])
+
+def minorChordGenerator():
+    startValue = random.randint(50,60)
+    return ([startValue,startValue+3,startValue+7])
+
+def augmentedChordGenerator():
+    startValue = random.randint(50,60)
+    return ([startValue,startValue+4,startValue+8])
+
+def reducedChordGenerator():
+    startValue = random.randint(50,60)
+    return ([startValue,startValue+3,startValue+6])
+
+# midi output function
+def generativeSound(midiStop):
+    midiout = rtmidi.MidiOut()
+    available_ports = midiout.get_ports()
+    #print (available_ports)
+    #print (midiout.get_port_count())
+    midiout.open_port(1)
+
+    # nasty way to stop all sounds
+    for iter in range(0,10):
+        for i in range(50,70):
+            midiout.send_message([0x80,i,0])
+    while not midiStop:
+        chordType = random.randint(0,3)
+        if specie1_individuals > specie2_individuals:
+            chord = majorChordGenerator()
+        else:
+            chord = minorChordGenerator()
+        midiout.send_message([0x90,chord[0],30])
+        midiout.send_message([0x90,chord[1],30])
+        midiout.send_message([0x90,chord[2],30])
+        time.sleep(float(random.randint(3000,5000)/1000))
+        midiout.send_message([0x80,chord[0],0])
+        midiout.send_message([0x80,chord[1],0])
+        midiout.send_message([0x80,chord[2],0])
+    for iter in range(0,10):
+        for i in range(50,70):
+            midiout.send_message([0x80,i,0])
+    del midiout
 {% endhighlight %}
 
-Check out the [Lifebox project repo]() for more information.
+Check out the [Lifebox project repo](https://github.com/ferrithemaker/lifebox) for more information.
 
