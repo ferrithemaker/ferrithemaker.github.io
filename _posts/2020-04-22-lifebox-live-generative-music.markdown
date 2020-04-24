@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lifebox live generative music"
+title:  "lifebox live generative music"
 date:   2020-04-22 20:14:26 +0200
 categories: lifebox
 ---
