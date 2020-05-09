@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "'Minecraft Pi' educative scripts for kids"
+title:  "[Updated] 'Minecraft Pi' educative scripts for kids"
 date:   2020-05-06 23:14:26 +0200
 categories: minecraft raspberrypi
 ---
 
 I started a new repo with educative Python scripts for kids. Play and learn with Python!
 
-The first two scripts are:
+The scripts are:
 
 ### picameraintominecraft.py [Level:HARD]
 
@@ -17,6 +17,9 @@ With this script you can render an image (from a local file or captured from pic
 
 A path of diamonds and yellow flowers follows you. Try to jump!
 
+### buildyourhouse.py [Level: MEDIUM]
+
+Create a house inside Minecraft Pi world using nested loops.
 
 Check out the [Minecraft project repo](https://github.com/ferrithemaker/minecraftpi-projects.git) for more information.
 
