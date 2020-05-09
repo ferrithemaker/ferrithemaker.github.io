@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[Updated] 'Minecraft Pi' educative scripts for kids"
-date:   2020-05-06 23:14:26 +0200
+title:  "Minecraft Pi educative python scripts for kids [updated]"
+date:   2020-05-10 01:45:26 +0200
 categories: minecraft raspberrypi
 ---
 
