@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Minecraft Pi educative python scripts for kids [updated]"
-date:   2020-05-10 01:45:26 +0200
+date:   2020-05-12 20:45:26 +0200
 categories: minecraft raspberrypi
 ---
 
@@ -20,6 +20,10 @@ A path of diamonds and yellow flowers follows you. Try to jump!
 ### buildyourhouse.py [Level: MEDIUM]
 
 Create a house inside Minecraft Pi world using nested loops.
+
+### elevator.py [Level: MEDIUM]
+
+Build an automatic elevator.
 
 Check out the [Minecraft project repo](https://github.com/ferrithemaker/minecraftpi-projects.git) for more information.
 
