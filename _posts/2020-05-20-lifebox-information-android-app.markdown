@@ -6,7 +6,7 @@ categories: lifebox
 ---
 You can download the new `Lifebox information Android App` from Google Play Store
 
-https://github.com/ferrithemaker/lifebox/tree/master/LifeboxInformationApp
+[https://play.google.com/store/apps/details?id=com.app.lifeboxinformation]
 
 You also have the source code of the Android App on the repo.
 
