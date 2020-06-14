@@ -25,7 +25,7 @@ Create a house inside Minecraft Pi world using nested loops.
 
 Build an automatic elevator.
 
-## deathblast.py [Level: EASY] 
+### deathblast.py [Level: EASY] 
 
 Learn how to manage events to throw a vaporizer blast arround you when the player presses the mouse right button.
 
