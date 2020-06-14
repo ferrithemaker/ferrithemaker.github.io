@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Minecraft Pi educative python scripts for kids [updated]"
-date:   2020-05-12 20:45:26 +0200
+date:   2020-06-14 20:15:26 +0200
 categories: minecraft raspberrypi
 ---
 
@@ -25,5 +25,10 @@ Create a house inside Minecraft Pi world using nested loops.
 
 Build an automatic elevator.
 
+## deathblast.py [Level: EASY] 
+
+Learn how to manage events to throw a vaporizer blast arround you when the player presses the mouse right button.
+
 Check out the [Minecraft project repo](https://github.com/ferrithemaker/minecraftpi-projects.git) for more information.
+
 
