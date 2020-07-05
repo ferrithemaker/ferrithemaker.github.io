@@ -6,7 +6,8 @@ categories: R,covid19
 ---
 R script to generate real-time covid-19 evolution graphs of cases and deaths (7 days moving average)
 
-{% highlight python %}
+{% highlight R %}
+
 library(ggplot2)
 require(plyr)
 
@@ -63,6 +64,10 @@ ggplot(covidSubsetByCountry, aes(daysFrom2020, movingAverageCases) ) +
 
 ggplot(covidSubsetByCountry, aes(daysFrom2020, movingAverageDeaths) ) +
   geom_point() + geom_line(data=spDeaths,aes(x,y),color = "red") + ggtitle(paste("Evolution of COVID-19 deaths: ",countrySelected))
+
 {% endhighlight %}
+
+![Moving average of covid-19 cases in Spain](./graph1.png)
+![Moving average of covid-19 cases in USA](./graph2.png)
 
 Check out the [repo file](https://github.com/ferrithemaker/Jumble/blob/master/R/analisis-covid.R) to download the code.
