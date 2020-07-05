@@ -67,7 +67,7 @@ ggplot(covidSubsetByCountry, aes(daysFrom2020, movingAverageDeaths) ) +
 
 {% endhighlight %}
 
-![Moving average of covid-19 cases in Spain](./graph1.png)
-![Moving average of covid-19 cases in USA](./graph2.png)
+![Moving average of covid-19 cases in Spain](assets/graph1.png)
+![Moving average of covid-19 cases in USA](assets/graph2.png)
 
 Check out the [repo file](https://github.com/ferrithemaker/Jumble/blob/master/R/analisis-covid.R) to download the code.
