@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "connecting Heltec ESP32 Lora microcontroller to 'the things network'"
+title:  "connecting Heltec ESP32 LoRa microcontroller to 'the things network'"
 date:   2020-07-05 16:03:00 +0200
 categories: LoRa,microcontrollers
 ---
