@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "covid-19 personal cumulative risk index tracker smartband"
-date:   2020-07-05 19:44:00 +0200
+date:   2020-09-01 19:44:00 +0200
 categories: esp32,covid19
 ---
 
