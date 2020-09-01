@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "shinyapps.io online tool to get real-time world data graphics of Covid-19"
-date:   2020-07-05 17:31:00 +0200
+date:   2020-07-25 19:31:00 +0200
 categories: R,covid19
 ---
 
