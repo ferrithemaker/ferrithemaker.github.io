@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "ShinyApp.io online tool to get real-time world data graphics of Covid-19"
+title:  "shinyapps.io online tool to get real-time world data graphics of Covid-19"
 date:   2020-07-05 17:31:00 +0200
 categories: R,covid19
 ---
 
 
-ShinyApp.io script to generate [online web](https://ferrithemaker.shinyapps.io/covid19-analysis/) based real-time covid-19 evolution graphs of cases and deaths (7 days moving average)
+shinyapps.io script to generate [online web](https://ferrithemaker.shinyapps.io/covid19-analysis/) based real-time covid-19 evolution graphs of cases and deaths (7 days moving average)
 
 {% highlight R %}
 
